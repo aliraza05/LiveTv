@@ -1,0 +1,21 @@
+//
+//  MyPrefixHeaderFile.pch
+//  livestreaming
+//
+//  Created by Ali Raza on 20/04/2018.
+//  Copyright © 2018 BroadPeak. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Define.h"
+#import "MBProgressHUD.h"
+
+#endif
