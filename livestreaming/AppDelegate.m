@@ -15,6 +15,13 @@
 @implementation AppDelegate
 
 
+- (CustomWindow *)window
+{
+    static CustomWindow *customWindow = nil;
+    if (!customWindow) customWindow = [[CustomWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    return customWindow;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     return YES;

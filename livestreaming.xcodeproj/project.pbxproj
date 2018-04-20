@@ -48,6 +48,9 @@
 		FBB7AD29208A132700E8AB00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB7AD28208A132700E8AB00 /* UIKit.framework */; };
 		FBB7AD2B208A132D00E8AB00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB7AD2A208A132D00E8AB00 /* Foundation.framework */; };
 		FBB7AD2D208A134000E8AB00 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB7AD2C208A134000E8AB00 /* QuartzCore.framework */; };
+		FBB7AD35208A28D000E8AB00 /* CustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7AD34208A28D000E8AB00 /* CustomWindow.m */; };
+		FBB7AD3D208A2A5700E8AB00 /* BusinessLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7AD39208A2A5700E8AB00 /* BusinessLayer.m */; };
+		FBB7AD3E208A2A5700E8AB00 /* NetworkLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7AD3C208A2A5700E8AB00 /* NetworkLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +154,12 @@
 		FBB7AD28208A132700E8AB00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FBB7AD2A208A132D00E8AB00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FBB7AD2C208A134000E8AB00 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FBB7AD33208A28D000E8AB00 /* CustomWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWindow.h; sourceTree = "<group>"; };
+		FBB7AD34208A28D000E8AB00 /* CustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWindow.m; sourceTree = "<group>"; };
+		FBB7AD38208A2A5700E8AB00 /* BusinessLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessLayer.h; sourceTree = "<group>"; };
+		FBB7AD39208A2A5700E8AB00 /* BusinessLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessLayer.m; sourceTree = "<group>"; };
+		FBB7AD3B208A2A5700E8AB00 /* NetworkLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkLayer.h; sourceTree = "<group>"; };
+		FBB7AD3C208A2A5700E8AB00 /* NetworkLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +193,7 @@
 		FBB7AC6B208A0F8600E8AB00 = {
 			isa = PBXGroup;
 			children = (
+				FBB7AD36208A2A5700E8AB00 /* SharedManagers */,
 				FBB7ACF5208A113700E8AB00 /* Categories */,
 				FBB7ACB8208A113700E8AB00 /* ThirdParty */,
 				FBB7ACB3208A113600E8AB00 /* Utilities */,
@@ -264,6 +274,7 @@
 		FBB7ACB8208A113700E8AB00 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				FBB7AD32208A28D000E8AB00 /* CustomWindow */,
 				FBB7ACB9208A113700E8AB00 /* AFNetworking */,
 				FBB7ACC7208A113700E8AB00 /* MBProgressHUD */,
 				FBB7ACCA208A113700E8AB00 /* SDWebImage */,
@@ -380,6 +391,42 @@
 				FBB7AD28208A132700E8AB00 /* UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBB7AD32208A28D000E8AB00 /* CustomWindow */ = {
+			isa = PBXGroup;
+			children = (
+				FBB7AD33208A28D000E8AB00 /* CustomWindow.h */,
+				FBB7AD34208A28D000E8AB00 /* CustomWindow.m */,
+			);
+			path = CustomWindow;
+			sourceTree = "<group>";
+		};
+		FBB7AD36208A2A5700E8AB00 /* SharedManagers */ = {
+			isa = PBXGroup;
+			children = (
+				FBB7AD37208A2A5700E8AB00 /* BusinessLayer */,
+				FBB7AD3A208A2A5700E8AB00 /* NetworkLayer */,
+			);
+			path = SharedManagers;
+			sourceTree = "<group>";
+		};
+		FBB7AD37208A2A5700E8AB00 /* BusinessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				FBB7AD38208A2A5700E8AB00 /* BusinessLayer.h */,
+				FBB7AD39208A2A5700E8AB00 /* BusinessLayer.m */,
+			);
+			path = BusinessLayer;
+			sourceTree = "<group>";
+		};
+		FBB7AD3A208A2A5700E8AB00 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				FBB7AD3B208A2A5700E8AB00 /* NetworkLayer.h */,
+				FBB7AD3C208A2A5700E8AB00 /* NetworkLayer.m */,
+			);
+			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -515,6 +562,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBB7AD3E208A2A5700E8AB00 /* NetworkLayer.m in Sources */,
+				FBB7AD35208A28D000E8AB00 /* CustomWindow.m in Sources */,
 				FBB7ACF9208A113700E8AB00 /* Utilities.m in Sources */,
 				FBB7AD0D208A113700E8AB00 /* UIImage+WebP.m in Sources */,
 				FBB7AD14208A113700E8AB00 /* UIColor+expanded.m in Sources */,
@@ -525,6 +574,7 @@
 				FBB7ACFE208A113700E8AB00 /* AFURLResponseSerialization.m in Sources */,
 				FBB7ACB1208A109400E8AB00 /* FirstViewController.m in Sources */,
 				FBB7AD07208A113700E8AB00 /* SDWebImageDownloaderOperation.m in Sources */,
+				FBB7AD3D208A2A5700E8AB00 /* BusinessLayer.m in Sources */,
 				FBB7AC8A208A0F8600E8AB00 /* main.m in Sources */,
 				FBB7AD03208A113700E8AB00 /* SDImageCache.m in Sources */,
 				FBB7ACFA208A113700E8AB00 /* AFHTTPSessionManager.m in Sources */,
@@ -712,7 +762,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/aliraza/Desktop/livestreaming/livestreaming/MyPrefixHeaderFile.pch;
+				GCC_PREFIX_HEADER = /Users/aliraza/Desktop/liveTv_repo/livestreaming/MyPrefixHeaderFile.pch;
 				INFOPLIST_FILE = livestreaming/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -728,7 +778,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/aliraza/Desktop/livestreaming/livestreaming/MyPrefixHeaderFile.pch;
+				GCC_PREFIX_HEADER = /Users/aliraza/Desktop/liveTv_repo/livestreaming/MyPrefixHeaderFile.pch;
 				INFOPLIST_FILE = livestreaming/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
