@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  SecondViewController.h
 //  livestreaming
 //
 //  Created by Ali Raza on 20/04/2018.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface CategoriesViewController : UIViewController
 
 
 @end

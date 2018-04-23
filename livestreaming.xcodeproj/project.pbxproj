@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB2EA99A208E10C60000666F /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2EA999208E10C60000666F /* Event.m */; };
+		FB2EA9A0208E15950000666F /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2EA99F208E15950000666F /* Channel.m */; };
+		FB9BD331208DC92E00A5B6E0 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9BD330208DC92E00A5B6E0 /* MoreViewController.m */; };
+		FB9BD336208DC9A500A5B6E0 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9BD334208DC9A500A5B6E0 /* EventTableViewCell.m */; };
+		FB9BD337208DC9A500A5B6E0 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB9BD335208DC9A500A5B6E0 /* EventTableViewCell.xib */; };
+		FB9BD33B208DD89D00A5B6E0 /* CategoriesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9BD339208DD89D00A5B6E0 /* CategoriesTableViewCell.m */; };
+		FB9BD33C208DD89D00A5B6E0 /* CategoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB9BD33A208DD89D00A5B6E0 /* CategoriesTableViewCell.xib */; };
 		FBB7AC79208A0F8600E8AB00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7AC78208A0F8600E8AB00 /* AppDelegate.m */; };
 		FBB7AC82208A0F8600E8AB00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB7AC80208A0F8600E8AB00 /* Main.storyboard */; };
 		FBB7AC84208A0F8600E8AB00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB7AC83208A0F8600E8AB00 /* Assets.xcassets */; };
@@ -14,8 +21,8 @@
 		FBB7AC8A208A0F8600E8AB00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7AC89208A0F8600E8AB00 /* main.m */; };
 		FBB7AC94208A0F8600E8AB00 /* livestreamingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7AC93208A0F8600E8AB00 /* livestreamingTests.m */; };
 		FBB7AC9F208A0F8600E8AB00 /* livestreamingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7AC9E208A0F8600E8AB00 /* livestreamingUITests.m */; };
-		FBB7ACB1208A109400E8AB00 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7ACAE208A109400E8AB00 /* FirstViewController.m */; };
-		FBB7ACB2208A109400E8AB00 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7ACB0208A109400E8AB00 /* SecondViewController.m */; };
+		FBB7ACB1208A109400E8AB00 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7ACAE208A109400E8AB00 /* EventViewController.m */; };
+		FBB7ACB2208A109400E8AB00 /* CategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7ACB0208A109400E8AB00 /* CategoriesViewController.m */; };
 		FBB7ACF8208A113700E8AB00 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7ACB5208A113600E8AB00 /* Reachability.m */; };
 		FBB7ACF9208A113700E8AB00 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7ACB7208A113600E8AB00 /* Utilities.m */; };
 		FBB7ACFA208A113700E8AB00 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7ACBB208A113700E8AB00 /* AFHTTPSessionManager.m */; };
@@ -71,6 +78,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB2EA998208E10C60000666F /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		FB2EA999208E10C60000666F /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		FB2EA99E208E15950000666F /* Channel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Channel.h; sourceTree = "<group>"; };
+		FB2EA99F208E15950000666F /* Channel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Channel.m; sourceTree = "<group>"; };
+		FB9BD32F208DC92E00A5B6E0 /* MoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		FB9BD330208DC92E00A5B6E0 /* MoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		FB9BD333208DC9A500A5B6E0 /* EventTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
+		FB9BD334208DC9A500A5B6E0 /* EventTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
+		FB9BD335208DC9A500A5B6E0 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		FB9BD338208DD89D00A5B6E0 /* CategoriesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoriesTableViewCell.h; sourceTree = "<group>"; };
+		FB9BD339208DD89D00A5B6E0 /* CategoriesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoriesTableViewCell.m; sourceTree = "<group>"; };
+		FB9BD33A208DD89D00A5B6E0 /* CategoriesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesTableViewCell.xib; sourceTree = "<group>"; };
 		FBB7AC74208A0F8600E8AB00 /* livestreaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = livestreaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB7AC77208A0F8600E8AB00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBB7AC78208A0F8600E8AB00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -85,10 +104,10 @@
 		FBB7AC9A208A0F8600E8AB00 /* livestreamingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = livestreamingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB7AC9E208A0F8600E8AB00 /* livestreamingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = livestreamingUITests.m; sourceTree = "<group>"; };
 		FBB7ACA0208A0F8600E8AB00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FBB7ACAD208A109400E8AB00 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		FBB7ACAE208A109400E8AB00 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		FBB7ACAF208A109400E8AB00 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		FBB7ACB0208A109400E8AB00 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		FBB7ACAD208A109400E8AB00 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewController.h; sourceTree = "<group>"; };
+		FBB7ACAE208A109400E8AB00 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
+		FBB7ACAF208A109400E8AB00 /* CategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriesViewController.h; sourceTree = "<group>"; };
+		FBB7ACB0208A109400E8AB00 /* CategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriesViewController.m; sourceTree = "<group>"; };
 		FBB7ACB4208A113600E8AB00 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		FBB7ACB5208A113600E8AB00 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		FBB7ACB6208A113600E8AB00 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
@@ -190,9 +209,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB2EA997208E10C60000666F /* DTO'S */ = {
+			isa = PBXGroup;
+			children = (
+				FB2EA998208E10C60000666F /* Event.h */,
+				FB2EA999208E10C60000666F /* Event.m */,
+				FB2EA99E208E15950000666F /* Channel.h */,
+				FB2EA99F208E15950000666F /* Channel.m */,
+			);
+			path = "DTO'S";
+			sourceTree = "<group>";
+		};
+		FB9BD332208DC98E00A5B6E0 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				FB9BD333208DC9A500A5B6E0 /* EventTableViewCell.h */,
+				FB9BD334208DC9A500A5B6E0 /* EventTableViewCell.m */,
+				FB9BD335208DC9A500A5B6E0 /* EventTableViewCell.xib */,
+				FB9BD338208DD89D00A5B6E0 /* CategoriesTableViewCell.h */,
+				FB9BD339208DD89D00A5B6E0 /* CategoriesTableViewCell.m */,
+				FB9BD33A208DD89D00A5B6E0 /* CategoriesTableViewCell.xib */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
 		FBB7AC6B208A0F8600E8AB00 = {
 			isa = PBXGroup;
 			children = (
+				FB2EA997208E10C60000666F /* DTO'S */,
+				FB9BD332208DC98E00A5B6E0 /* CustomCells */,
 				FBB7AD36208A2A5700E8AB00 /* SharedManagers */,
 				FBB7ACF5208A113700E8AB00 /* Categories */,
 				FBB7ACB8208A113700E8AB00 /* ThirdParty */,
@@ -252,10 +297,12 @@
 		FBB7ACAC208A109400E8AB00 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FBB7ACAD208A109400E8AB00 /* FirstViewController.h */,
-				FBB7ACAE208A109400E8AB00 /* FirstViewController.m */,
-				FBB7ACAF208A109400E8AB00 /* SecondViewController.h */,
-				FBB7ACB0208A109400E8AB00 /* SecondViewController.m */,
+				FBB7ACAD208A109400E8AB00 /* EventViewController.h */,
+				FBB7ACAE208A109400E8AB00 /* EventViewController.m */,
+				FBB7ACAF208A109400E8AB00 /* CategoriesViewController.h */,
+				FBB7ACB0208A109400E8AB00 /* CategoriesViewController.m */,
+				FB9BD32F208DC92E00A5B6E0 /* MoreViewController.h */,
+				FB9BD330208DC92E00A5B6E0 /* MoreViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -535,9 +582,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB9BD337208DC9A500A5B6E0 /* EventTableViewCell.xib in Resources */,
 				FBB7AC87208A0F8600E8AB00 /* LaunchScreen.storyboard in Resources */,
 				FBB7AC84208A0F8600E8AB00 /* Assets.xcassets in Resources */,
 				FBB7AC82208A0F8600E8AB00 /* Main.storyboard in Resources */,
+				FB9BD33C208DD89D00A5B6E0 /* CategoriesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,17 +611,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB9BD33B208DD89D00A5B6E0 /* CategoriesTableViewCell.m in Sources */,
 				FBB7AD3E208A2A5700E8AB00 /* NetworkLayer.m in Sources */,
 				FBB7AD35208A28D000E8AB00 /* CustomWindow.m in Sources */,
 				FBB7ACF9208A113700E8AB00 /* Utilities.m in Sources */,
 				FBB7AD0D208A113700E8AB00 /* UIImage+WebP.m in Sources */,
 				FBB7AD14208A113700E8AB00 /* UIColor+expanded.m in Sources */,
 				FBB7ACFC208A113700E8AB00 /* AFSecurityPolicy.m in Sources */,
-				FBB7ACB2208A109400E8AB00 /* SecondViewController.m in Sources */,
+				FBB7ACB2208A109400E8AB00 /* CategoriesViewController.m in Sources */,
+				FB2EA9A0208E15950000666F /* Channel.m in Sources */,
+				FB2EA99A208E10C60000666F /* Event.m in Sources */,
 				FBB7AC79208A0F8600E8AB00 /* AppDelegate.m in Sources */,
 				FBB7AD12208A113700E8AB00 /* UIScrollView+SVPullToRefresh.m in Sources */,
 				FBB7ACFE208A113700E8AB00 /* AFURLResponseSerialization.m in Sources */,
-				FBB7ACB1208A109400E8AB00 /* FirstViewController.m in Sources */,
+				FBB7ACB1208A109400E8AB00 /* EventViewController.m in Sources */,
 				FBB7AD07208A113700E8AB00 /* SDWebImageDownloaderOperation.m in Sources */,
 				FBB7AD3D208A2A5700E8AB00 /* BusinessLayer.m in Sources */,
 				FBB7AC8A208A0F8600E8AB00 /* main.m in Sources */,
@@ -586,6 +638,8 @@
 				FBB7ACFF208A113700E8AB00 /* AFURLSessionManager.m in Sources */,
 				FBB7AD08208A113700E8AB00 /* SDWebImageManager.m in Sources */,
 				FBB7AD06208A113700E8AB00 /* SDWebImageDownloader.m in Sources */,
+				FB9BD336208DC9A500A5B6E0 /* EventTableViewCell.m in Sources */,
+				FB9BD331208DC92E00A5B6E0 /* MoreViewController.m in Sources */,
 				FBB7AD0F208A113700E8AB00 /* UIImageView+WebCache.m in Sources */,
 				FBB7AD0E208A113700E8AB00 /* UIImageView+HighlightedWebCache.m in Sources */,
 				FBB7AD01208A113700E8AB00 /* MKAnnotationView+WebCache.m in Sources */,
