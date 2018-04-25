@@ -61,5 +61,11 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    Channel *chanl = [tableDataArray objectAtIndex:indexPath.row];
+
+}
 
 @end

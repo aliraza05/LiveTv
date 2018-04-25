@@ -61,6 +61,7 @@
 		FBB7AD35208A28D000E8AB00 /* CustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7AD34208A28D000E8AB00 /* CustomWindow.m */; };
 		FBB7AD3D208A2A5700E8AB00 /* BusinessLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7AD39208A2A5700E8AB00 /* BusinessLayer.m */; };
 		FBB7AD3E208A2A5700E8AB00 /* NetworkLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7AD3C208A2A5700E8AB00 /* NetworkLayer.m */; };
+		FBCDEFC12090A9F900C4F64D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCDEFC02090A9F800C4F64D /* AVFoundation.framework */; };
 		FBDE6451208F7109000515DA /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDE644F208F7109000515DA /* SplashViewController.m */; };
 		FBDE6452208F7109000515DA /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDE6450208F7109000515DA /* SplashViewController.xib */; };
 /* End PBXBuildFile section */
@@ -189,6 +190,7 @@
 		FBB7AD39208A2A5700E8AB00 /* BusinessLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessLayer.m; sourceTree = "<group>"; };
 		FBB7AD3B208A2A5700E8AB00 /* NetworkLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkLayer.h; sourceTree = "<group>"; };
 		FBB7AD3C208A2A5700E8AB00 /* NetworkLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkLayer.m; sourceTree = "<group>"; };
+		FBCDEFC02090A9F800C4F64D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		FBDE644E208F7109000515DA /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		FBDE644F208F7109000515DA /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 		FBDE6450208F7109000515DA /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBCDEFC12090A9F900C4F64D /* AVFoundation.framework in Frameworks */,
 				FBB7AD2D208A134000E8AB00 /* QuartzCore.framework in Frameworks */,
 				FBB7AD2B208A132D00E8AB00 /* Foundation.framework in Frameworks */,
 				FBB7AD29208A132700E8AB00 /* UIKit.framework in Frameworks */,
@@ -454,6 +457,7 @@
 		FBB7AD27208A132700E8AB00 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FBCDEFC02090A9F800C4F64D /* AVFoundation.framework */,
 				FBB7AD2C208A134000E8AB00 /* QuartzCore.framework */,
 				FBB7AD2A208A132D00E8AB00 /* Foundation.framework */,
 				FBB7AD28208A132700E8AB00 /* UIKit.framework */,
@@ -841,11 +845,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/livestreaming",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/aliraza/Desktop/liveTv_repo/livestreaming/MyPrefixHeaderFile.pch;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = livestreaming/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.broadpeak.livestreaming;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -857,11 +868,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/livestreaming",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/aliraza/Desktop/liveTv_repo/livestreaming/MyPrefixHeaderFile.pch;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = livestreaming/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.broadpeak.livestreaming;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
