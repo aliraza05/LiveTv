@@ -9,6 +9,7 @@
 #import "CategoriesViewController.h"
 #import "CategoriesTableViewCell.h"
 #import "Event.h"
+#import "ChannelsViewController.h"
 
 @interface CategoriesViewController ()<BusinessLayerDelegate,UITableViewDelegate,UITableViewDataSource>
 {
@@ -50,7 +51,7 @@
         //
         [tableDataArray removeAllObjects];
         NSDictionary *data = [dataArray firstObject];
-        NSArray *events = [data objectForKey:@"events"];
+        NSArray *events = [data objectForKey:@"categories"];
         
         for (NSDictionary *dict in events)
         {
@@ -80,5 +81,20 @@
     [cell loadChannel:evnt];
     
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Event *evnt = [tableDataArray objectAtIndex:indexPath.row];
+    [self performSegueWithIdentifier:@"showCategoryChannels" sender:evnt];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"showCategoryChannels"])
+    {
+        ChannelsViewController *vc = (ChannelsViewController *) [segue destinationViewController];
+        vc.event = (Event *)sender;
+    }
 }
 @end

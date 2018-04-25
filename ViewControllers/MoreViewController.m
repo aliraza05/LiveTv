@@ -10,12 +10,23 @@
 
 @interface MoreViewController ()
 
+- (IBAction)termsAction:(id)sender;
+- (IBAction)mailAction:(id)sender;
+- (IBAction)rateUsAction:(id)sender;
+- (IBAction)versionAction:(id)sender;
+- (IBAction)supportAction:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *version_btn;
 @end
 
 @implementation MoreViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSString * appVersionString = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+
+    [self.version_btn setTitle:[NSString stringWithFormat:@"Version %@",appVersionString] forState:UIControlStateNormal];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -34,4 +45,18 @@
 }
 */
 
+- (IBAction)termsAction:(id)sender {
+}
+
+- (IBAction)mailAction:(id)sender {
+}
+
+- (IBAction)rateUsAction:(id)sender {
+}
+
+- (IBAction)versionAction:(id)sender {
+}
+
+- (IBAction)supportAction:(id)sender {
+}
 @end

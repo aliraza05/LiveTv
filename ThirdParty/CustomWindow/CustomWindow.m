@@ -7,6 +7,7 @@
 //
 
 #import "CustomWindow.h"
+#import "SplashViewController.h"
 
 @implementation CustomWindow
 
@@ -18,6 +19,25 @@
 }
 */
 
+-(void)showsplashWithConfiguration:(NSArray *)configuration
+{
+//    [self.navigationController.navigationBar.layer setZPosition:-0.1];
+    
+    SplashViewController *webView = [[SplashViewController alloc]initWithNibName:@"SplashViewController" bundle:nil];
+    
+    
+    webView.configuration = configuration;
+    
+    webView.view.frame = APP_DELEGATE.window.frame;
+    
+    [APP_DELEGATE.window.rootViewController addChildViewController:webView];
+    
+    [APP_DELEGATE.window.rootViewController.view addSubview:webView.view];
+    [APP_DELEGATE.window.rootViewController.view bringSubviewToFront:webView.view];
+    APP_DELEGATE.window.rootViewController.view.clipsToBounds = NO;
+    
+    [webView didMoveToParentViewController:APP_DELEGATE.window.rootViewController];
+}
 
 -(void)showHUDWithText:(NSString*)text
 {

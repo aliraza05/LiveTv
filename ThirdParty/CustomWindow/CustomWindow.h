@@ -18,4 +18,6 @@
 - (void)showHUDWithText:(NSString*)text;
 - (void)removeHUD;
 
+-(void)showsplashWithConfiguration:(NSArray *)configuration;
+
 @end

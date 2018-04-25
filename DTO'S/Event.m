@@ -6,13 +6,14 @@
 //
 
 #import "Event.h"
-
+#import "Channel.h"
 
 NSString *const kEventName = @"name";
 NSString *const kEventLevel = @"live";
 NSString *const kEventStatus = @"status";
 NSString *const kEventImageURL = @"image_url";
 NSString *const kEventPriority = @"priority";
+NSString *const kEventChannel = @"channels";
 
 
 @interface Event ()
@@ -47,6 +48,16 @@ NSString *const kEventPriority = @"priority";
             self.image_url = [self objectOrNilForKey:kEventImageURL fromDictionary:dict];
             self.priority = [[self objectOrNilForKey:kEventPriority fromDictionary:dict] doubleValue];
 
+        NSArray *channel = [self objectOrNilForKey:kEventChannel fromDictionary:dict];
+        
+        NSMutableArray *temp = [[NSMutableArray alloc]init];
+        
+        for (NSDictionary *dict in channel)
+        {
+            Channel *chnl = [[Channel alloc]initWithDictionary:dict];
+            [temp addObject:chnl];
+        }
+        self.channels = temp;
     }
     
     return self;

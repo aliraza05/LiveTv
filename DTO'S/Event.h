@@ -17,6 +17,8 @@
 @property (nonatomic, strong) NSString *image_url;
 @property (nonatomic, assign) double priority;
 
+@property (nonatomic, strong) NSArray *channels;
+
 + (instancetype)modelObjectWithDictionary:(NSDictionary *)dict;
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
 - (NSDictionary *)dictionaryRepresentation;

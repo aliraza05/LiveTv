@@ -14,6 +14,9 @@
 		FB9BD337208DC9A500A5B6E0 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB9BD335208DC9A500A5B6E0 /* EventTableViewCell.xib */; };
 		FB9BD33B208DD89D00A5B6E0 /* CategoriesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9BD339208DD89D00A5B6E0 /* CategoriesTableViewCell.m */; };
 		FB9BD33C208DD89D00A5B6E0 /* CategoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB9BD33A208DD89D00A5B6E0 /* CategoriesTableViewCell.xib */; };
+		FBAC7155209046BB002F4DE1 /* ChannelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC7154209046BB002F4DE1 /* ChannelsViewController.m */; };
+		FBAC715920904850002F4DE1 /* ChannelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC715720904850002F4DE1 /* ChannelTableViewCell.m */; };
+		FBAC715A20904850002F4DE1 /* ChannelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBAC715820904850002F4DE1 /* ChannelTableViewCell.xib */; };
 		FBB7AC79208A0F8600E8AB00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7AC78208A0F8600E8AB00 /* AppDelegate.m */; };
 		FBB7AC82208A0F8600E8AB00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB7AC80208A0F8600E8AB00 /* Main.storyboard */; };
 		FBB7AC84208A0F8600E8AB00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB7AC83208A0F8600E8AB00 /* Assets.xcassets */; };
@@ -58,6 +61,8 @@
 		FBB7AD35208A28D000E8AB00 /* CustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7AD34208A28D000E8AB00 /* CustomWindow.m */; };
 		FBB7AD3D208A2A5700E8AB00 /* BusinessLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7AD39208A2A5700E8AB00 /* BusinessLayer.m */; };
 		FBB7AD3E208A2A5700E8AB00 /* NetworkLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB7AD3C208A2A5700E8AB00 /* NetworkLayer.m */; };
+		FBDE6451208F7109000515DA /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDE644F208F7109000515DA /* SplashViewController.m */; };
+		FBDE6452208F7109000515DA /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDE6450208F7109000515DA /* SplashViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +95,11 @@
 		FB9BD338208DD89D00A5B6E0 /* CategoriesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoriesTableViewCell.h; sourceTree = "<group>"; };
 		FB9BD339208DD89D00A5B6E0 /* CategoriesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoriesTableViewCell.m; sourceTree = "<group>"; };
 		FB9BD33A208DD89D00A5B6E0 /* CategoriesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesTableViewCell.xib; sourceTree = "<group>"; };
+		FBAC7153209046BB002F4DE1 /* ChannelsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelsViewController.h; sourceTree = "<group>"; };
+		FBAC7154209046BB002F4DE1 /* ChannelsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelsViewController.m; sourceTree = "<group>"; };
+		FBAC715620904850002F4DE1 /* ChannelTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelTableViewCell.h; sourceTree = "<group>"; };
+		FBAC715720904850002F4DE1 /* ChannelTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelTableViewCell.m; sourceTree = "<group>"; };
+		FBAC715820904850002F4DE1 /* ChannelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelTableViewCell.xib; sourceTree = "<group>"; };
 		FBB7AC74208A0F8600E8AB00 /* livestreaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = livestreaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB7AC77208A0F8600E8AB00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBB7AC78208A0F8600E8AB00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -179,6 +189,9 @@
 		FBB7AD39208A2A5700E8AB00 /* BusinessLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessLayer.m; sourceTree = "<group>"; };
 		FBB7AD3B208A2A5700E8AB00 /* NetworkLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkLayer.h; sourceTree = "<group>"; };
 		FBB7AD3C208A2A5700E8AB00 /* NetworkLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkLayer.m; sourceTree = "<group>"; };
+		FBDE644E208F7109000515DA /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		FBDE644F208F7109000515DA /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		FBDE6450208F7109000515DA /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +242,9 @@
 				FB9BD338208DD89D00A5B6E0 /* CategoriesTableViewCell.h */,
 				FB9BD339208DD89D00A5B6E0 /* CategoriesTableViewCell.m */,
 				FB9BD33A208DD89D00A5B6E0 /* CategoriesTableViewCell.xib */,
+				FBAC715620904850002F4DE1 /* ChannelTableViewCell.h */,
+				FBAC715720904850002F4DE1 /* ChannelTableViewCell.m */,
+				FBAC715820904850002F4DE1 /* ChannelTableViewCell.xib */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -303,6 +319,11 @@
 				FBB7ACB0208A109400E8AB00 /* CategoriesViewController.m */,
 				FB9BD32F208DC92E00A5B6E0 /* MoreViewController.h */,
 				FB9BD330208DC92E00A5B6E0 /* MoreViewController.m */,
+				FBDE644E208F7109000515DA /* SplashViewController.h */,
+				FBDE644F208F7109000515DA /* SplashViewController.m */,
+				FBDE6450208F7109000515DA /* SplashViewController.xib */,
+				FBAC7153209046BB002F4DE1 /* ChannelsViewController.h */,
+				FBAC7154209046BB002F4DE1 /* ChannelsViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -583,10 +604,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB9BD337208DC9A500A5B6E0 /* EventTableViewCell.xib in Resources */,
+				FBDE6452208F7109000515DA /* SplashViewController.xib in Resources */,
 				FBB7AC87208A0F8600E8AB00 /* LaunchScreen.storyboard in Resources */,
 				FBB7AC84208A0F8600E8AB00 /* Assets.xcassets in Resources */,
 				FBB7AC82208A0F8600E8AB00 /* Main.storyboard in Resources */,
 				FB9BD33C208DD89D00A5B6E0 /* CategoriesTableViewCell.xib in Resources */,
+				FBAC715A20904850002F4DE1 /* ChannelTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +651,8 @@
 				FBB7AD07208A113700E8AB00 /* SDWebImageDownloaderOperation.m in Sources */,
 				FBB7AD3D208A2A5700E8AB00 /* BusinessLayer.m in Sources */,
 				FBB7AC8A208A0F8600E8AB00 /* main.m in Sources */,
+				FBAC715920904850002F4DE1 /* ChannelTableViewCell.m in Sources */,
+				FBAC7155209046BB002F4DE1 /* ChannelsViewController.m in Sources */,
 				FBB7AD03208A113700E8AB00 /* SDImageCache.m in Sources */,
 				FBB7ACFA208A113700E8AB00 /* AFHTTPSessionManager.m in Sources */,
 				FBB7ACFD208A113700E8AB00 /* AFURLRequestSerialization.m in Sources */,
@@ -640,6 +665,7 @@
 				FBB7AD06208A113700E8AB00 /* SDWebImageDownloader.m in Sources */,
 				FB9BD336208DC9A500A5B6E0 /* EventTableViewCell.m in Sources */,
 				FB9BD331208DC92E00A5B6E0 /* MoreViewController.m in Sources */,
+				FBDE6451208F7109000515DA /* SplashViewController.m in Sources */,
 				FBB7AD0F208A113700E8AB00 /* UIImageView+WebCache.m in Sources */,
 				FBB7AD0E208A113700E8AB00 /* UIImageView+HighlightedWebCache.m in Sources */,
 				FBB7AD01208A113700E8AB00 /* MKAnnotationView+WebCache.m in Sources */,
